@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.douncoding.pointman.GameActivity">
+
+    <include layout="@layout/container_game_board"
+        android:id="@+id/owner_board_container"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="3"
+        android:background="#00FF00"/>
+
+    <include layout="@layout/container_game_status"
+        android:id="@+id/status_container"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:background="#FF0000"/>
+
+    <include layout="@layout/container_game_board"
+        android:id="@+id/other_board_container"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="3"
+        android:background="#0000FF"/>
+
+</LinearLayout>
